@@ -61,7 +61,7 @@ const NavBar: React.FC = () => {
 							<Link
 								to="/"
 								onClick={handleClose}
-								style={{ color: location.pathname === "/" && "#4071f4" }}
+								style={{ color: location?.pathname === "/" && "#4071f4" }}
 							>
 								Home
 							</Link>
@@ -70,7 +70,7 @@ const NavBar: React.FC = () => {
 							<Link
 								to="/about"
 								onClick={handleClose}
-								style={{ color: location.pathname === "/about" && "#4071f4" }}
+								style={{ color: location?.pathname === "/about" && "#4071f4" }}
 							>
 								About
 							</Link>
@@ -79,7 +79,7 @@ const NavBar: React.FC = () => {
 							<Link
 								to="/skills"
 								onClick={handleClose}
-								style={{ color: location.pathname === "/skills" && "#4071f4" }}
+								style={{ color: location?.pathname === "/skills" && "#4071f4" }}
 							>
 								Skills
 							</Link>
@@ -89,7 +89,7 @@ const NavBar: React.FC = () => {
 								to="/projects"
 								onClick={handleClose}
 								style={{
-									color: location.pathname === "/projects" && "#4071f4",
+									color: location?.pathname === "/projects" && "#4071f4",
 								}}
 							>
 								Projects
@@ -99,7 +99,7 @@ const NavBar: React.FC = () => {
 							<Link
 								to="/contact"
 								onClick={handleClose}
-								style={{ color: location.pathname === "/contact" && "#4071f4" }}
+								style={{ color: location?.pathname === "/contact" && "#4071f4" }}
 							>
 								Contact
 							</Link>
