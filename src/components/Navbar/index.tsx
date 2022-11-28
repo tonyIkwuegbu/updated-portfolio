@@ -4,11 +4,14 @@ import "./style.css";
 import brand from "../../assets/brand.png";
 
 
+interface LocationState {
+    pathname: string;
 
+}
 
 
 const NavBar: React.FC = () => {
-	const location: any = useLocation();
+	const location:LocationState = useLocation();
 	const [open, setOpen] = useState(false);
 	const [screenWidth, setScreenWidth] = useState(0);
 
