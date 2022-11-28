@@ -1,0 +1,98 @@
+.home {
+    flex-grow: 1;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.home .title {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.home .title .name {
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+
+.home .title .job {
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+
+    animation: type 3s steps(18);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+
+    }
+
+    100% {
+        width: 18ch;
+    }
+}
+
+.home .title button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #ffff;
+    padding: 15px 30px;
+    border-radius: 999px;
+    background-color: #04009a;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.home .title button:hover {
+    background-color: #77acf1;
+    font-weight: 800;
+}
+
+.home .person {
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.home .person img {
+    width: 50%;
+    display: block;
+    margin: 3rem auto 0 auto;
+    border-radius: 50%;
+
+
+}
+
+@media (min-width: 800px) {
+    .home {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home .title,
+    .home .person {
+        width: 50%;
+        margin-top: 0;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .home .person img {
+        width: 35%;
+        margin-left: 4rem;
+        border-radius: 50%;
+    }
+}
