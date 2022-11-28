@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./style.css";
 import brand from "../../assets/brand.png";
 
 
-interface LocationState {
-    pathname?: string;
 
-}
 
 
 const NavBar: React.FC = () => {
-	const location:LocationState = useLocation();
+	//const location:LocationState = useLocation();
 	const [open, setOpen] = useState(false);
 	const [screenWidth, setScreenWidth] = useState(0);
 
