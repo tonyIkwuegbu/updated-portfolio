@@ -3,6 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import "./style.css";
 import brand from "../../assets/brand.png";
 
+
+
+
+
 const NavBar: React.FC = () => {
 	const location = useLocation();
 	const [open, setOpen] = useState(false);
@@ -61,7 +65,7 @@ const NavBar: React.FC = () => {
 							<Link
 								to="/"
 								onClick={handleClose}
-								style={{ color: location?.pathname === "/" && "#4071f4" }}
+								style={{ color: location?.pathname === "/" ? "#4071f4" : null }}
 							>
 								Home
 							</Link>
@@ -70,7 +74,7 @@ const NavBar: React.FC = () => {
 							<Link
 								to="/about"
 								onClick={handleClose}
-								style={{ color: location?.pathname === "/about" && "#4071f4" }}
+								style={{ color: location?.pathname === "/about" ? "#4071f4" : null }}
 							>
 								About
 							</Link>
@@ -79,7 +83,7 @@ const NavBar: React.FC = () => {
 							<Link
 								to="/skills"
 								onClick={handleClose}
-								style={{ color: location?.pathname === "/skills" && "#4071f4" }}
+								style={{ color: location?.pathname === "/skills" ? "#4071f4" : null}}
 							>
 								Skills
 							</Link>
@@ -89,7 +93,7 @@ const NavBar: React.FC = () => {
 								to="/projects"
 								onClick={handleClose}
 								style={{
-									color: location?.pathname === "/projects" && "#4071f4",
+									color: location?.pathname === "/projects" ? "#4071f4" : null,
 								}}
 							>
 								Projects
@@ -99,7 +103,7 @@ const NavBar: React.FC = () => {
 							<Link
 								to="/contact"
 								onClick={handleClose}
-								style={{ color: location?.pathname === "/contact" && "#4071f4" }}
+								style={{ color: location?.pathname === "/contact"? "#4071f4" : null }}
 							>
 								Contact
 							</Link>
