@@ -5,7 +5,7 @@ import brand from "../../assets/brand.png";
 
 
 interface LocationState {
-    pathname: string;
+    pathname?: string;
 
 }
 
