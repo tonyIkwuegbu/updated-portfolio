@@ -4,8 +4,8 @@ import "./App.css";
 import Home from "./components/Home";
 // import Footer from "./components/Footer";
 import About from "./components/About";
- import NavBar from "./components/Navbar";
-// import Skills from "./components/Skills";
+import NavBar from "./components/Navbar";
+import Skills from "./components/Skills";
 // import Projects from "./components/Projects";
 // import Contact from "./components/Contact";
 import Loading from "../src/components/Loading";
@@ -25,12 +25,12 @@ function App() {
 				<Loading />
 			) : (
 				<div className="app">
-					<NavBar/>
+					<NavBar />
 					<Routes>
 						<Route path="/" element={<Home />} />
-					 <Route  path="/about" element={<About />} />
-          {/* <Route exact path="/skills" component={Skills} />
-          <Route exact path="/projects" component={Projects} />
+						<Route path="/about" element={<About />} />
+						<Route path="/skills" element={<Skills />} />
+						{/* <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />  */}
 					</Routes>
 					{/* <Footer/> */}
