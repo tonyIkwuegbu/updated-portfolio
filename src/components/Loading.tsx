@@ -8,7 +8,7 @@ function Loading() {
         <img
           src={brand}
           alt="brand"
-          className="w-36 object-contain rounded-md animate-spin p-2"
+          className="w-36 object-contain rounded-md animate-pulse p-2"
           height={100}
         />
       </div>
