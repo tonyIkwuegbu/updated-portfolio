@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import About from "./components/About";
 import NavBar from "./components/Navbar";
 import Skills from "./components/Skills";
@@ -33,7 +33,7 @@ function App() {
 						{/* <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />  */}
 					</Routes>
-					{/* <Footer/> */}
+					<Footer />
 				</div>
 			)}
 		</Router>
