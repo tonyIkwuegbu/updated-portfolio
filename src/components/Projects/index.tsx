@@ -16,7 +16,7 @@ const index: React.FC = () => {
 						<h3 className="text-gray-500">{item?.title}</h3>
 					</div>
 					<img
-						className="w-48 h-48 mx-auto bg-white group-hover:animate-pulse"
+						className="w-48 h-48 mx-auto bg-none aspect-square object-contain group-hover:animate-pulse"
 						src={item?.image}
 						alt={item?.title}
 					/>
