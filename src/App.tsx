@@ -6,11 +6,11 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import NavBar from "./components/Navbar";
 import Skills from "./components/Skills";
-// import Projects from "./components/Projects";
+import Projects from "./components/Projects";
 // import Contact from "./components/Contact";
 import Loading from "../src/components/Loading";
 
-function App() {
+const App: React.FC = () => {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
@@ -30,8 +30,9 @@ function App() {
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />
 						<Route path="/skills" element={<Skills />} />
-						{/* <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contact" component={Contact} />  */}
+						<Route path="/projects" element={<Projects />} />
+
+						{/* <Route exact path="/contact" component={Contact} />  */}
 					</Routes>
 					<Footer />
 				</div>
