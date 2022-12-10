@@ -7,7 +7,7 @@ import About from "./components/About";
 import NavBar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import Loading from "../src/components/Loading";
 
 const App: React.FC = () => {
@@ -31,14 +31,13 @@ const App: React.FC = () => {
 						<Route path="/about" element={<About />} />
 						<Route path="/skills" element={<Skills />} />
 						<Route path="/projects" element={<Projects />} />
-
-						{/* <Route exact path="/contact" component={Contact} />  */}
+						<Route path="/contact" element={<Contact />} />
 					</Routes>
 					<Footer />
 				</div>
 			)}
 		</Router>
 	);
-}
+};
 
 export default App;
